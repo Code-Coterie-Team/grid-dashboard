@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     list-style-type: none;
+    text-decoration: none;
 }
 
 :root{
@@ -21,13 +22,61 @@ body{
 }
 .grid-profile{
     display:grid;
-    grid-template-columns: 1fr 5fr 2fr;
-    column-gap: 50px;
-    justify-content:space-evenly;
+    grid-template-columns:160px 6fr 2fr;
+    /* column-gap: 50px; */
+    /* justify-content:space-evenly; */
     background-color: white;
-    width:95%;
-    height:95%;
+    width:93%;
+    height:90%;
     border-radius:10px;
+    overflow: hidden;
+}
+
+
+ .dashboard{
+    background: rgb(73, 57, 113);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    border-radius: 10px 0;
+    
+ }
+
+a:link{
+    color: white;
+}
+
+a:visited{}
+
+a:hover{}
+
+a:active{}
+
+h1{
+    padding-top: 4rem;
+    padding-left: 2.5rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+
+}
+li{
+    font-size: 1.5rem;
+    padding-left: 5.5rem;
+
+}
+
+li:hover{
+    background-color: white;
+    color: black;
 }
 
 .main{
@@ -39,7 +88,7 @@ body{
 
 .Activities{
     grid-area: activities;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .Schedule{
