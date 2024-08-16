@@ -1,3 +1,31 @@
-div{
+/* div{
     display: inline;
+} */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    background-image: url("image/5baf8325-ed69-40b0-b9d2-d8c5d2bde3b0.jpeg");
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-profile{
+    display:grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    column-gap: 50px;
+    justify-content:space-evenly;
+    background-color: white;
+    width:95%;
+    height:95%;
+    border-radius:10px;
+}
+.dashboard{
+   
 }
