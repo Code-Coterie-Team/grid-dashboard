@@ -26,7 +26,7 @@ body{
     border-radius:10px;
     width:95%;
     height:95%;
-    gap:3rem;
+    gap:2rem;
 }
 
 
@@ -76,6 +76,8 @@ li{
     color: white;
     border-radius:20px;
     height:30px;
+    border-top-right-radius:40px;
+    border-bottom-right-radius: 40px;
 
 }
 
@@ -92,14 +94,13 @@ li:hover{
     width:100%;
     background-color: #f6f7fb;
     border-radius: 10px;
-    padding: 20px;
-    
     
 }
 
 .Activities{
     grid-area: activities;
     width: 100%;
+    padding:1rem;
     
     
 }
@@ -107,7 +108,7 @@ li:hover{
 .Schedule{
     grid-area: schedule;
     display: flex;
-   flex-direction: column;    
+    flex-direction: column;    
 
 }
 
@@ -125,19 +126,18 @@ li:hover{
        "hiking run swimming swimming";
     grid-template-rows: 150px 150px;
     gap:0.5rem;
-    
-
+    border-radius: 10px;
 }
 
 .Tennis{
     grid-area:tennis;
-    border-radius: 5px;
+    border-radius:10px;
     position: relative;
 }
 .running{
     grid-area: run;
     position: relative;
-
+    border-radius:10px;
 }
 .cycling{
     grid-area: cycling;
@@ -171,8 +171,12 @@ li:hover{
     font-family: "Roboto", sans-serif;
     color: #f6f7fb;
     padding-right:0.5rem;
+    border-radius: 10px;
     background: linear-gradient(180deg, transparent, transparent, rgba(3, 3, 185, 0.5));
-    
+    opacity:1;
+}
+.title:hover{
+    opacity: 0;
 }
 .imgactivity{
     object-fit: cover;
