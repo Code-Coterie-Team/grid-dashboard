@@ -16,20 +16,20 @@
 body{
     background-image: url("images/5baf8325-ed69-40b0-b9d2-d8c5d2bde3b0.jpeg");
     display:flex;
-    height: 100vh;
+    height: 140vh;
     justify-content: center;
     align-items: center;
     font-family: "Nunito", sans-serif;
 }
 .grid-profile{
     display:grid;
-    grid-template-columns: 1fr 6fr 2fr;
+    grid-template-columns:10% 60% 30%;
     background-color: white; 
     border-radius:10px;
     gap:2rem;
-    height:95vh;
+    height:120vh;
     width: 95%;
-    grid-template-columns: repeat(auto-fill, minmax(6fr, 1fr));
+    /* grid-template-rows : repeat(auto-fill, minmax(auto,200px)); */
 }
 
 
@@ -40,14 +40,25 @@ body{
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    border-radius: 10px 0px;
-    height:95vh;
+    border-radius: 10px 0px 0px 10px;
+    height:120vh;
 }
 
-a:link{
-    color: white;
-    position: relative;
+ul{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-end;
+    gap: 4rem;
+    
+}
+
+a{
     padding-left: 20px;
+    border-top-right-radius:40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    padding: 1rem;
     
 }
 
@@ -64,25 +75,15 @@ h1{
     font-weight: 700;
 }
 
-ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4rem;
-
-}
-li{
+ /* li{
     font-size: 1.5rem;
     text-align: center;
-    color: white;
-    border-radius:20px;
-    height:30px;
-    border-top-right-radius:40px;
-    border-bottom-right-radius: 40px;
+     color: white; 
+     border-radius:20px; 
+     height:3rem; 
+}  */
 
-}
-
-li:hover{
+a:hover{
     background-color: white;
     color: black;
 }
@@ -93,9 +94,11 @@ li:hover{
       'activities activities'
       'schedule personal' ;
     height:90vh;
-    width: 95%;
+    width: 70rem; 
+    grid-template-columns: 60% 40%;
+    /* grid-auto-rows: 300px; */
     border-radius: 10px;
-    gap:5rem;
+    gap:2rem;
     
     
 }
@@ -103,9 +106,10 @@ li:hover{
 .Activities{
     grid-area: activities;
     gap:2rem;
-    width: 100%;
     display: grid;
     grid-template-rows:1fr 4fr;
+    width: 100%;
+    
 }
 .pactivitie h2{
     
@@ -120,7 +124,7 @@ li:hover{
     display: flex;
     flex-direction: column;   
     padding-left: 20px; 
-
+    /* height: 100%; */
 }
 
 .activehistory{
@@ -136,7 +140,8 @@ li:hover{
     grid-template-areas:
        "tennis run cycling yoga"
        "hiking run swimming swimming";
-    grid-template-rows:repeat(2,150px);
+    grid-template-rows:repeat(2,130px);
+    /* grid-template-columns:170px 210px 170px 170px; */
     gap:0.5rem;
     border-radius: 10px;
 }
@@ -304,9 +309,8 @@ button{
     grid-template-areas: 
     " run run "
     "long roll";
-    grid-template-rows:repeat(2,125px);
-    grid-template-columns: repeat(2,2fr);
     gap:10px;
+    height: 100%;
     
 
 }
