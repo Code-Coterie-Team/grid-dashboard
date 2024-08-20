@@ -24,7 +24,7 @@ body{
 .grid-profile{
     
     display:grid;
-    grid-template-columns: 1fr 6fr 2fr;
+    grid-template-columns:10% 60% 30%;
     background-color: white; 
     border-radius:10px;
     gap:2rem;
@@ -86,7 +86,7 @@ h1{
 
 a:hover{
     background-color: white;
-    color: black;
+    color: blue;
 }
 /* main section */
 .main{
@@ -352,8 +352,10 @@ button{
 }
 /* profile section */
 .profile{
-  
-  
+   display: grid;
+   gap: 10px;
+   grid-template-rows:1fr 2fr 2fr 2fr;
+   width: 100%;
 }
 .avatar{
     
