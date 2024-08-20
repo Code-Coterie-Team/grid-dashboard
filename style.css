@@ -23,7 +23,7 @@ body{
 }
 .grid-profile{
     display:grid;
-    grid-template-columns:10% 60% 30%;
+    grid-template-columns:10% 60% 20%;
     background-color: white; 
     border-radius:10px;
     gap:2rem;
@@ -344,10 +344,11 @@ button{
 }
 /* profile section */
 .profile{
-   display: grid;
-   gap: 10px;
-   grid-template-rows:1fr 2fr 2fr 2fr;
-   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   /* grid-template-rows:1fr 2fr 2fr 2fr; */
+   /* width: 100%; */
 }
 .avatar{
     
