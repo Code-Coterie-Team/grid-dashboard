@@ -24,15 +24,13 @@ body{
 .grid-profile{
     
     display:grid;
-    grid-template-columns:10% 70% 20%;
-    /* grid-template-rows: repeat(autofill,minmax(auto,200px)); */
+    grid-template-columns: 1fr 6fr 2fr;
     background-color: white; 
     border-radius:10px;
-    margin: 20px;
-    width:95%;
-    height:120vh;
-    
-
+    gap:2rem;
+    height:95vh;
+    width: 95%;
+    grid-template-columns: repeat(auto-fill, minmax(6fr, 1fr));
 }
 
 
@@ -43,14 +41,25 @@ body{
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    border-radius: 10px  0px 0px 10px ;
+    border-radius: 10px 0px;
+    height:95vh;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-end;
+    gap: 4rem;
     
 }
 
-a:link{
-    color: white;
-    position: relative;
+a{
     padding-left: 20px;
+    border-top-right-radius:40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    padding: 1rem;
     
 }
 
@@ -67,25 +76,15 @@ h1{
     font-weight: 700;
 }
 
-ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4rem;
-
-}
-li{
+ /* li{
     font-size: 1.5rem;
     text-align: center;
-    color: white;
-    border-radius:20px;
-    height:30px;
-    border-top-right-radius:40px;
-    border-bottom-right-radius: 40px;
+     color: white; 
+     border-radius:20px; 
+     height:3rem; 
+}  */
 
-}
-
-li:hover{
+a:hover{
     background-color: white;
     color: black;
 }
@@ -101,15 +100,18 @@ li:hover{
     grid-template-columns: 60% 40%;
     /* grid-auto-rows: 300px; */
     border-radius: 10px;
-    gap:2rem;
+    gap:5rem;
+    
+    
 }
 
 .Activities{
     grid-area: activities;
-    display: flex;
-    flex-direction: column;
-    
-    }
+    gap:2rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows:1fr 4fr;
+}
 .pactivitie h2{
     
     font-family: "Nunito", sans-serif;
@@ -120,8 +122,10 @@ li:hover{
 
 .Schedule{
     grid-area: schedule;
-    height: 100%;
-  
+    display: flex;
+    flex-direction: column;   
+    padding-left: 20px; 
+
 }
 
 .activehistory{
@@ -137,6 +141,8 @@ li:hover{
     grid-template-areas:
        "tennis run cycling yoga"
        "hiking run swimming swimming";
+    grid-template-rows:repeat(2,150px);
+    gap:0.5rem;
     border-radius: 10px;
     grid-template-rows: repeat(2,150px);
    
@@ -309,7 +315,11 @@ button{
     grid-template-areas:
     " run run "
     "long roll";
-    height: 100%;
+    grid-template-rows:repeat(2,125px);
+    grid-template-columns: repeat(2,2fr);
+    gap:10px;
+    
+
 }
 .run{
     
