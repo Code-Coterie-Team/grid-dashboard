@@ -14,7 +14,6 @@
 body{
     background-image: url("images/5baf8325-ed69-40b0-b9d2-d8c5d2bde3b0.jpeg");
     display:flex;
-    height:100vh;
     justify-content: center;
     align-content: center;
     font-family: "Nunito", sans-serif;
@@ -25,27 +24,20 @@ body{
     grid-template-columns:10% 70% 20%;
     background-color: white; 
     border-radius:10px;
-    gap:1rem;
+    gap:0.5rem;
     margin:3rem;
 
 }
 
 
- @media (max-width:900px){
-    .grid-profile{
-    display:grid;
-    grid-template-columns: 10% 60% 20%;
-   
-    
-}}
+/* @media (max-width:500px){
+    .dashboard{grid-area: 1/2/1/2;}
+    .main{grid-area:1/2/2/3;}
+    .profile{grid-area:2/3/2/3 ;}
+        /* grid-template-columns:10% 90%; */
+     .grid-profile { grid-template-rows:45% 55%;}
+       } */
 
-@media (max-width:500px){
-    .grid-profile{
-        grid-template-columns:10% 90%;
-       
-
-    }
-}
 
 .dashboard{
     background-color: rgb(73, 57, 113);
@@ -110,7 +102,7 @@ a:hover{
     border-radius: 10px;
     gap:2rem;
     background-color: #f0f2f4;
-    margin:20px;
+    margin:1rem 0px 1rem 0px;
     
 }
 @media (max-width:900) {
@@ -221,10 +213,10 @@ a:hover{
     grid-template-columns: 60% 35%;
     gap:2rem;
 }
-.schedule{
+.Schedule{
     display:flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 2rem;
     
 
 }
@@ -239,7 +231,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items:center;
-    padding:2rem;
+    padding:1rem;
     gap: 4px;
     
 }
@@ -276,7 +268,7 @@ a:hover{
     align-items: center;
     color: #484d53;
     font-size:1.6rem;
-    font-weight:400px;
+    /* font-weight:400px; */
     border-radius: 1rem;
 }
 .memberofTennis{
