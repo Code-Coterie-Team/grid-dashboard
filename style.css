@@ -21,11 +21,14 @@ body{
 
 .grid-profile{
     display:grid;
-    grid-template-columns:10% 70% 20%;
+    grid-template-areas: 
+    "dashboard main profile";
+    grid-template-columns:10% 60% 30%;
     background-color: white; 
     border-radius:10px;
     gap:0.5rem;
     margin:3rem;
+    
 
 }
 
@@ -34,12 +37,16 @@ body{
     .dashboard{grid-area: 1/2/1/2;}
     .main{grid-area:1/2/2/3;}
     .profile{grid-area:2/3/2/3 ;}
-        /* grid-template-columns:10% 90%; */
-     .grid-profile { grid-template-rows:45% 55%;}
-       } */
+        
+     /* .grid-profile { 
+        grid-template-rows:45% 55%;
+        grid-template-columns:10% 90%;
+    } */
+    
 
 
 .dashboard{
+    grid-area: dashboard;
     background-color: rgb(73, 57, 113);
     color: white;
     font-family: "Roboto", sans-serif;
@@ -96,12 +103,13 @@ a:hover{
 }
 /* main section */
 .main{
+    grid-area: main;
     display:grid;
     grid-template-rows: 50% 50%;
     border-radius: 10px;
     border-radius: 10px;
     gap:2rem;
-    background-color: #f0f2f4;
+    background-color:#f6f7fb;
     margin:1rem 0px 1rem 0px;
     
 }
@@ -383,18 +391,19 @@ button{
 }
 /* profile section */
 .profile{
+    grid-area:profile;
     display: flex;
     flex-direction: column;
-    background-color: #f0f2f4;
-    margin:1rem;
+    background-color:#f6f7fb;
     border-radius: 1rem;
-    gap:2rem;
-}
+    gap:1rem;
+    padding:1rem;
+    }
 .avatar{
     display: flex;
     justify-content: space-around;
     align-content: center;
-    padding:2rem;
+    padding:1rem;
     height:10%;
     font-size:1.5rem;
     width:95%;
@@ -420,24 +429,47 @@ button{
 .calorie{
     display: flex;
     background-color: rgb(181, 206, 247);
-    border-radius: 20px;
-    /* justify-content:space-around;
-    align-con: center; */
-    width: 95%;
+    border-radius:1rem;
+    justify-content: flex-start;
+    gap:5px;
+    flex-direction: column;
+    
+} 
+.graph{
+    display:flex;
+    gap:5px;
 }
+/* .shape{
+    width:50px;
+    height: 50px;
+    border-radius:50%;
+    border:solid 1px black;
+} */
 
 .friends{
     display: flex;
     flex-direction: column;
-    height:40%;
+    gap:1rem;
+
 } 
 .cardfriend{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap:5px;
+    border:op0 solid 1px #e8eef4;
+    border-radius:0.5rem;
+    background-color: white;
+    box-shadow: 0px 1px 3px  rgba(0, 0, 0, 0.16);
+}
+.cardfriend p{
+    padding-left:1rem;
+    font-size:1rem;
 }
 .user-info{
     display: flex;
+    padding:5px;
+    align-items: center;
+    gap:5px;
 }
 .imguserinfo{
     display: flex;
@@ -451,4 +483,18 @@ button{
     height: 100%;
     border-radius: 50%;
     position: absolute;
+}
+.content{
+    position: relative;
+    display: flex;
+    height:20rem;
+    border-radius:2rem;
+}
+.content img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius:2rem;
+    padding:5px;
+
 }
