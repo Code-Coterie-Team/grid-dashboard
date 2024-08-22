@@ -54,19 +54,20 @@ body{
 ul{
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
-    /* align-items: flex-end; */
+    /* justify-content: flex-start; 
+     align-items: flex-end;  */
     gap: 2rem;
     
 }
 
 a{
-    /* padding-left: 20px; */
+    
     border-top-left-radius:40px;
     border-bottom-left-radius: 40px;
     color: white;
     padding: 1rem;
     font-size: 1.5rem;
+    
     
 }
 
