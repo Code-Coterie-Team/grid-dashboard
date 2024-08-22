@@ -23,7 +23,7 @@ body{
     display:grid;
     grid-template-areas: 
     "dashboard main profile";
-    grid-template-columns:10% 60% 30%;
+    grid-template-columns:10% 65% 25%;
     background-color: white; 
     border-radius:10px;
     gap:0.5rem;
@@ -33,17 +33,11 @@ body{
 }
 
 
-/* @media (max-width:500px){
-    .dashboard{grid-area: 1/2/1/2;}
-    .main{grid-area:1/2/2/3;}
-    .profile{grid-area:2/3/2/3 ;}
-        
-     /* .grid-profile { 
-        grid-template-rows:45% 55%;
+ /* @media (max-width:500px){
+     .grid-profile { 
         grid-template-columns:10% 90%;
-    } */
-    
-
+    } 
+} */
 
 .dashboard{
     grid-area: dashboard;
@@ -61,17 +55,18 @@ ul{
     display: flex;
     flex-direction: column;
     /* justify-content: flex-start; */
-    align-items: flex-end;
-    gap: 4rem;
+    /* align-items: flex-end; */
+    gap: 2rem;
     
 }
 
 a{
-    padding-left: 20px;
-    border-top-right-radius:40px;
-    border-bottom-right-radius: 40px;
+    /* padding-left: 20px; */
+    border-top-left-radius:40px;
+    border-bottom-left-radius: 40px;
     color: white;
     padding: 1rem;
+    font-size: 1.5rem;
     
 }
 
@@ -83,23 +78,22 @@ a:active{}
 
 h1{
     padding-top: 4rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
     font-size: 1.8rem;
     font-family: "Nunito", sans-serif;
     font-weight: 500;
 }
 
- /* li{
+ li{
+    padding: 0 0 0 1rem;
     font-size: 1.5rem;
     text-align: center;
-     color: white; 
-     border-radius:20px; 
-     height:3rem; 
-}  */
+
+} 
 
 a:hover{
     background-color: white;
-    color: blue;
+    color: black;
 }
 /* main section */
 .main{
@@ -113,7 +107,7 @@ a:hover{
     margin:1rem 0px 1rem 0px;
     
 }
-@media (max-width:900) {
+/* @media (max-width:900) {
     .main{
         grid-template-rows:50% 50%;
     }
@@ -124,7 +118,7 @@ a:hover{
         grid-template-columns:60% 40%;
     }
     
-}
+} */
 
 .Activities{
     gap:1rem;
@@ -218,15 +212,18 @@ a:hover{
 } 
 .history{
     display: grid;
-    grid-template-columns: 60% 35%;
+    grid-template-columns: 55% 40%;
     gap:2rem;
 }
 .Schedule{
     display:flex;
     flex-direction: column;
     padding-left: 2rem;
-    
+    }
 
+.Weeklyschedule,.pbests{
+    padding: 0 0 2rem 0 ;
+    font-size: 1.8rem;
 }
 .members{
     display: flex;
@@ -248,7 +245,7 @@ a:hover{
     font-size: 2.5rem;
 }
 
-.month{
+.week{
     font-size:1.2rem ;
 }
 
@@ -256,19 +253,14 @@ a:hover{
     background: linear-gradient(240deg, rgb(124, 136, 224) 0%, #c3f4fc 100%);
     display:grid;
     grid-template-columns:15% 60% 25%;
-    align-content: center;
+    align-items: center;
     color: #484d53;
     font-size:1.6rem;
     font-weight: 400;
     border-radius: 1rem;
 
 }
-.date{
-    display: flex;
-    flex-direction: column;
-    align-items:center
-    
-}
+
 .memberofyoga{
     background: linear-gradient(240deg, #e5a243ab 0%, #f7f7aa 90%);
     display:grid;
@@ -307,13 +299,15 @@ a:hover{
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    padding-left:10px;
+    padding-left:1rem;
+    border-left: 3px solid #59636e;
+
 }
 
 .people{
     display: flex;
-    width: 25px;
-    height: 25px;
+    width: 2.5rem;
+    height: 2.5rem;
     position: relative;
     
 }
@@ -334,7 +328,7 @@ div.member>span{
 
 }
 .img2{
-    z-index:2;
+    z-index:1;
 }
 .img3{
     z-index: 4;
@@ -346,13 +340,23 @@ div.member>span{
 }
 button{
     margin: 1rem;
-    width:10rem;
-    height:2rem;
+    width:8rem;
+    height:3rem;
     border-radius: 3rem;
     border:solid 1px white;
     background: white;
 }
 
+button:hover{
+    animation: buttonanimate 0.2s linear;
+}
+
+@keyframes buttonanimate {
+    0%{transform: scaleX(1);}
+    25%{transform: scaleX(0.9);}
+    50%{transform: scaleX(0.7);}
+    100%{transform: scaleX(1);}  
+}
 .personal{
     display:grid;
     grid-template-columns:repeat(2,1fr);
