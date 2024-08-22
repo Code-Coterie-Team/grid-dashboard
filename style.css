@@ -22,22 +22,22 @@ body{
 .grid-profile{
     display:grid;
     grid-template-areas: 
-    "dashboard main profile";
-    grid-template-columns:12% 63% 25%;
+    "dashboard mainarea";
+    grid-template-columns:12% 88%;
     background-color: white; 
     border-radius:10px;
-    gap:0.5rem;
+  
     margin:3rem;
     
 
 }
 
 
- /* @media (max-width:500px){
+  @media (max-width:500px){
      .grid-profile { 
         grid-template-columns:10% 90%;
     } 
-} */
+} 
 
 .dashboard{
     grid-area: dashboard;
@@ -96,15 +96,26 @@ h1{
 } 
 
 /* main section */
+.mainarea{
+    display: grid;
+    grid-area: mainarea;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 
+    "main profile"
+    ;
+    padding: 0.8rem;
+    gap: 0.8rem;
+}
+
 .main{
     grid-area: main;
     display:grid;
     grid-template-rows: 50% 50%;
     border-radius: 10px;
     border-radius: 10px;
-    gap:2rem;
+    gap:1rem;
     background-color:#f6f7fb;
-    margin:1rem 0px 1rem 0px;
+   
     
 }
 /* @media (max-width:900) {
@@ -404,7 +415,7 @@ div.long>span{
 .longicon{
     justify-self: flex-end;
     align-self: flex-end;
-    padding: 1.5rem 1rem 0;
+    padding: 1.5rem 1rem 0 0;
 }
 .roller{
     font-size: 1.5rem;
@@ -424,8 +435,8 @@ div.roller>span{
 .rollericon{
     justify-self: flex-end;
     align-self: flex-end;
-    padding: 0 1rem 0.8rem 0;
-    width: 10rem;
+    padding: 1.5rem 1.5rem 0rem 0;
+    width: 9.5rem;
     height: 7rem;
 }
 
