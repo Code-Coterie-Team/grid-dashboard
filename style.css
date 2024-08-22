@@ -23,7 +23,7 @@ body{
     display:grid;
     grid-template-areas: 
     "dashboard main profile";
-    grid-template-columns:10% 65% 25%;
+    grid-template-columns:12% 63% 25%;
     background-color: white; 
     border-radius:10px;
     gap:0.5rem;
@@ -61,7 +61,6 @@ ul{
 }
 
 a{
-    
     border-top-left-radius:40px;
     border-bottom-left-radius: 40px;
     color: white;
@@ -88,6 +87,8 @@ h1{
 }
 
  li{
+    display: flex;
+    gap: 1rem;
     padding: 0 0 0 1rem;
     font-size: 1.5rem;
     text-align: center;
@@ -213,6 +214,7 @@ h1{
     display: grid;
     grid-template-columns: 55% 40%;
     gap:2rem;
+    height: 100%;
 }
 .Schedule{
     display:flex;
@@ -497,7 +499,7 @@ div.roller>span{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 1px solid;
+    border: 1px solid transparent;
     background:conic-gradient(#590b94 0deg,#590b94 270deg,gray 270deg,gray 360deg);
 }
 .circle2{
@@ -505,7 +507,7 @@ div.roller>span{
     height: 60px;
     border-radius: 50%;
     position: absolute;
-    border: 1px solid;
+    border: 1px solid transparent;
     top:9px;
     right: 10px;
     background-color: rgb(181, 206, 247);
